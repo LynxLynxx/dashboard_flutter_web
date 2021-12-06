@@ -1,6 +1,6 @@
 {
-    "name": "dashboard_flutter_web",
-    "short_name": "dashboard_flutter_web",
+    "name": "dashboar_flutter_web",
+    "short_name": "dashboar_flutter_web",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
