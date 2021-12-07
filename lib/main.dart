@@ -1,9 +1,11 @@
+import 'package:dashboar_flutter_web/controllers/menu_controller.dart';
 import 'package:dashboar_flutter_web/layout.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  Get.put(MenuController());
   runApp(const MyApp());
 }
 

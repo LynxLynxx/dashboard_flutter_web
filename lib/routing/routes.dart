@@ -1,11 +1,11 @@
-const OverViewPageRoute = "Overview";
-const OrdersPageRoute = "Orders";
-const LentCarsPageRoute = "Lent Cars";
-const AuthenticationPageRoute = "Authentication";
+const overViewPageRoute = "Overview";
+const ordersPageRoute = "Orders";
+const lentCarsPageRoute = "Lent Cars";
+const authenticationPageRoute = "Authentication";
 
 List sideMenuItems = [
-  OverViewPageRoute,
-  OrdersPageRoute,
-  LentCarsPageRoute,
-  AuthenticationPageRoute,
+  overViewPageRoute,
+  ordersPageRoute,
+  lentCarsPageRoute,
+  authenticationPageRoute,
 ];
