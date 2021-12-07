@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Dash',
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
             GoogleFonts.mulishTextTheme(Theme.of(context).textTheme).apply(
           bodyColor: Colors.black,
         ),
-        pageTransitionsTheme: PageTransitionsTheme(builders: {
+        pageTransitionsTheme: const PageTransitionsTheme(builders: {
           TargetPlatform.iOS: FadeUpwardsPageTransitionsBuilder(),
           TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
         }),
