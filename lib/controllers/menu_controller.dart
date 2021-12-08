@@ -10,17 +10,19 @@ class MenuController extends GetxController {
   var activeItem = overViewPageRoute.obs;
   var hoverItem = "".obs;
 
-  changeActiveItemTo(String itemName) {
+  changeActiveitemTo(String itemName) {
     activeItem.value = itemName;
   }
 
   onHover(String itemName) {
-    if (!isActive(itemName)) hoverItem.value = itemName;
+    if (!isActive(itemName)) {
+      hoverItem.value = itemName;
+    }
   }
 
-  isActive(String itemName) => activeItem.value = itemName;
+  isActive(String itemName) => activeItem.value == itemName;
 
-  isHovering(String itemName) => hoverItem.value = itemName;
+  isHovering(String itemName) => hoverItem.value == itemName;
 
   Widget returnIconFor(String itemName) {
     switch (itemName) {

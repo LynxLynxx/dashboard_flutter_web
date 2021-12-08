@@ -11,8 +11,9 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               children: [
                 Container(
                   padding: const EdgeInsets.only(left: 30),
-                  child: const Icon(
-                    Icons.car_rental,
+                  child: Image.asset(
+                    "assets/icons/car2.png",
+                    scale: 1.24,
                   ),
                 ),
               ],
@@ -110,6 +111,6 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
           ),
         ],
       ),
-      iconTheme: IconThemeData(color: dark),
+      iconTheme: const IconThemeData(color: dark),
       backgroundColor: Colors.transparent,
     );
