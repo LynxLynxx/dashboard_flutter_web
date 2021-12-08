@@ -1,3 +1,4 @@
+import 'package:dashboar_flutter_web/helpers/local_navigator.dart';
 import 'package:dashboar_flutter_web/widgets/side_menu.dart';
 import 'package:flutter/material.dart';
 
@@ -13,8 +14,9 @@ class LargeScreen extends StatelessWidget {
         ),
         Expanded(
           flex: 5,
-          child: Container(
-            color: Colors.blue,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: localNavigator(),
           ),
         ),
       ],

@@ -1,3 +1,4 @@
+import 'package:dashboar_flutter_web/constants/style.dart';
 import 'package:dashboar_flutter_web/controllers/menu_controller.dart';
 import 'package:dashboar_flutter_web/controllers/navigation_controller.dart';
 import 'package:dashboar_flutter_web/layout.dart';
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Dash',
+      title: 'Car Rental',
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: light,
         textTheme:
             GoogleFonts.mulishTextTheme(Theme.of(context).textTheme).apply(
           bodyColor: Colors.black,
